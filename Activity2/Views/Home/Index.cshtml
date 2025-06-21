@@ -1,8 +1,35 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    body {
+        background: url('https://wallpapers.com/images/hd/funny-cat-and-dog-pictures-zhzz8ckzkknv8dli.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+</style>
+
+<div class="container home-overlay text-center">
+    <h1 class="display-4">Welcome to Pet Haven!</h1>
+    <p class="lead">Your one-stop spot for adorable Cats, Kittens, Dogs, and Puppies.</p>
+    <p>Browse our lovable pets and find your perfect furry friend!</p>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-4 mb-3">
+            <a asp-controller="Home" asp-action="CatsAndKittens" class="btn btn-outline-primary btn-lg w-100">
+                See Cats & Kittens
+            </a>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <a asp-controller="Home" asp-action="Privacy" class="btn btn-outline-success btn-lg w-100">
+                See Dogs & Puppies
+            </a>
+        </div>
+    </div>
+
+    <blockquote class="blockquote mt-4">
+        <p>"Bringing joy one paw at a time."</p>
+    </blockquote>
 </div>
+
